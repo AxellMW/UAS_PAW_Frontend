@@ -3,8 +3,8 @@
         <v-container fluid fill-height class="posisinya">
             <v-layout flex align-center justify-center>
                 <v-flex xs12 sm6 elevation-6>
-                    <v-toolbar class="grey darken-3">
-                        <v-toolbar-title class="grey--text">
+                    <v-toolbar class="grey">
+                        <v-toolbar-title class="grey">
                             <h1>Login</h1>
                         </v-toolbar-title>
                     </v-toolbar>
@@ -33,11 +33,6 @@
 </template>
 
 <style>
-    @import url("https://fonts.googleapis.com/css?family=Jolly%20Lodger");
-    .grey--text{
-        font-family: "Jolly Lodger";
-    }
-
     .posisinya{
         position: absolute;
         top: 20px;
@@ -58,11 +53,11 @@
                 valid: false,
                 password: '',
                 passwordRules: [
-                    (v) => !!v || 'Password tidak boleh kosong :(',
+                    (v) => !!v || 'Password tidak boleh kosong!',
                 ],
                 email: '',
                 emailRules: [
-                    (v) => !!v || 'E-mail tidak boleh kosong :(',
+                    (v) => !!v || 'E-mail tidak boleh kosong!',
                 ]
             };
         },
@@ -76,13 +71,15 @@
                     }).then(response => {
                         localStorage.setItem('id', response.data.user.id);
                         localStorage.setItem('token', response.data.access_token);
+                        localStorage.setItem('name', response.data.user.name);
+                        localStorage.setItem('email', response.data.user.email);
                         this.error_message = response.data.message;
                         this.color = "green";
                         this.snackbar = true;
                         this.load = false;
                         this.clear();
                         this.$router.push({
-                            name: 'Dashboard',
+                            name: 'Home',
                         });
                     }).catch(error => {
                         this.error_message = error.response.data.message;

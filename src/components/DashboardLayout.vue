@@ -3,8 +3,8 @@
         <v-navigation-drawer v-model="drawer" class="fullheight" width="256" app>
             <v-list-item>
                 <v-list-item-content>
-                    <v-list-item-title class="title"> Axell Marvelino Wijaya </v-list-item-title>
-                    <v-list-item-subtitle> 190710207 </v-list-item-subtitle>
+                    <v-list-item-title class="title"><v-icon size="125px">mdi-book-open-page-variant</v-icon></v-list-item-title>
+                    <v-list-item-subtitle> Happy Reading! </v-list-item-subtitle>
                 </v-list-item-content>
             </v-list-item>
 
@@ -43,9 +43,11 @@ export default {
         return {
             drawer: true,
             items: [
-                { title: "Dashboard", to:'/dashboard' },
-                { title: 'Course', to: '/course' },
-                { title: 'User', to: '/user' },
+                { title: "Home", to:'/home' },
+                { title: 'Profile', to: '/profile' },
+                { title: 'Book', to: '/book' },
+                { title: 'News', to: '/news' },
+                { title: 'Staff', to: '/staff' },
             ],
         };
     },

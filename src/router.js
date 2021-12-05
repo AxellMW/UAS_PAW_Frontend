@@ -32,23 +32,37 @@ const router = new VueRouter({
                 //Dashboard
                 {
                     path: '/',
-                    name: 'Dashboard',
-                    meta: {title : 'Dashboard'},
-                    component: importComponent('Dashboard'),
+                    name: 'Home',
+                    meta: {title : 'Home'},
+                    component: importComponent('Home'),
                 },
-                //courses
+                //profile
                 {
-                    path: '/course',
-                    name: 'Course',
-                    meta: {title : 'Courses'},
-                    component: importComponent('DataMaster/Courses'),
+                    path: '/profile',
+                    name: 'Profile',
+                    meta: {title : 'Profile'},
+                    component: importComponent('DataMaster/Profile'),
                 },
-                //users
+                //book
                 {
-                    path: '/user',
-                    name: 'User',
-                    meta: {title : 'Users'},
-                    component: importComponent('DataMaster/Users'),
+                    path: '/book',
+                    name: 'Book',
+                    meta: {title : 'Books'},
+                    component: importComponent('DataMaster/Book'),
+                },
+                //news
+                {
+                    path: '/news',
+                    name: 'News',
+                    meta: {title : 'News'},
+                    component: importComponent('DataMaster/News'),
+                },
+                //staff
+                {
+                    path: '/staff',
+                    name: 'Staff',
+                    meta: {title : 'Staffs'},
+                    component: importComponent('DataMaster/Staff'),
                 },
             ],
         },

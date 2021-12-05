@@ -3,8 +3,8 @@
         <v-container fluid fill-height class="posisinya">
             <v-layout flex align-center justify-center>
                 <v-flex xs12 sm6 elevation-6>
-                    <v-toolbar class="grey darken-3">
-                        <v-toolbar-title class="grey--text">
+                    <v-toolbar class="grey">
+                        <v-toolbar-title class="grey">
                             <h1>Register</h1>
                         </v-toolbar-title>
                     </v-toolbar>
@@ -34,11 +34,6 @@
 </template>
 
 <style>
-    @import url("https://fonts.googleapis.com/css?family=Jolly%20Lodger");
-    .grey--text{
-        font-family: "Jolly Lodger";
-    }
-
     .posisinya{
         position: absolute;
         top: 20px;
