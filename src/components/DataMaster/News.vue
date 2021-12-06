@@ -133,7 +133,7 @@ export default {
             this.user.append('date', this.form.date);
             this.user.append('text', this.form.text);
 
-            var url = this.$api + '/news/'
+            var url = this.$api + '/news'
             this.load = true;
             this.$http.post(url, this.user, {
                 headers: {

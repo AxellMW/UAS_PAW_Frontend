@@ -141,7 +141,7 @@ export default {
             this.user.append('description', this.form.description);
             this.user.append('text', this.form.text);
 
-            var url = this.$api + '/book/'
+            var url = this.$api + '/book'
             this.load = true;
             this.$http.post(url, this.user, {
                 headers: {

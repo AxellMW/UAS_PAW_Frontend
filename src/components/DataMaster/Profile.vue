@@ -108,7 +108,7 @@ export default {
             this.user.append('email', this.form.email);
             this.user.append('password', this.form.password);
 
-            var url = this.$api + '/user/'
+            var url = this.$api + '/user'
             this.load = true;
             this.$http.post(url, this.user, {
                 headers: {

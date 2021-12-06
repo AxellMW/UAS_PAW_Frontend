@@ -113,7 +113,7 @@ export default {
             this.staff.append('name', this.form.name);
             this.staff.append('position', this.form.position);
 
-            var url = this.$api + '/staff/'
+            var url = this.$api + '/staff'
             this.load = true;
             this.$http.post(url, this.staff, {
                 headers: {
