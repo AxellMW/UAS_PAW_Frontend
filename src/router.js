@@ -19,19 +19,19 @@ const router = new VueRouter({
         },
         //login
         {
-            path: '/login',
+            path: '/',
             name: 'Login',
             meta: { title: 'Login' },
             component: importComponent('Login'),
         },
 
         {
-            path: '/',
+            path: '/home',
             component: importComponent('DashboardLayout'),
             children: [
                 //Dashboard
                 {
-                    path: '/',
+                    path: '/home',
                     name: 'Home',
                     meta: {title : 'Home'},
                     component: importComponent('Home'),
