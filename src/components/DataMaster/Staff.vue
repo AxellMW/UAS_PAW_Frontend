@@ -1,6 +1,6 @@
 <template>
     <v-main class="list">
-        <h3 class="text-h3 font-weight-medium mb-5"> Users </h3>
+        <h3 class="text-h3 font-weight-medium mb-5"> Staffs </h3>
         <v-card>
             <v-card-title>
                 <v-text-field
@@ -23,7 +23,7 @@
         <v-dialog v-model="dialog" persistent max-width="600px">
             <v-card>
                 <v-card-title>
-                    <span class="headline">{{ formTitle }} User</span>
+                    <span class="headline">{{ formTitle }} Staff</span>
                 </v-card-title>
                 <v-card-text>
                     <v-container>
